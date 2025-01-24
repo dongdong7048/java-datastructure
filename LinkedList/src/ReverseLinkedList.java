@@ -10,7 +10,6 @@ public class ReverseLinkedList {
      *  3. 將 current 賦值給目標鍊表 reverse，此時 reverse 擁有目前 current 的鍊表狀態
      *  4. 將臨時鍊表 nextTemp 賦值為 current，以進行下一輪的迴圈
      *  5. 迴圈結束後，reverse 即為反轉 head 的鍊表
-     *
      * **/
 
 
