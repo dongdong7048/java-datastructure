@@ -1,10 +1,10 @@
 public class hasCycleLinkedList {
 
     /***
-     * 檢驗鍊表是否有環(Cycle)的存在
-     * 說明： 給定一個鍊表 head 及一個 pos 整數值，pos為最後一個鍊表節點的next指向此鍊表的第幾個節點，依此檢驗這個鍊表是否有環
+     * 檢驗鏈表是否有環(Cycle)的存在
+     * 說明： 給定一個鏈表 head 及一個 pos 整數值，pos為最後一個鏈表節點的next指向此鏈表的第幾個節點，依此檢驗這個鏈表是否有環
      * 限制：
-     *  1. 鍊表長度[0, 10^4]
+     *  1. 鏈表長度[0, 10^4]
      *  2. -10^5 <= Node.val <= 10^5
      *  3. pos is -1 or a valid index in the linked-list.
      * 思路：
@@ -57,7 +57,7 @@ public class hasCycleLinkedList {
 
         boolean hasCycle = hasCycle(head);
 
-        System.out.println("鍊表是否有環: "+ hasCycle);
+        System.out.println("鏈表是否有環: "+ hasCycle);
 
     }
 
