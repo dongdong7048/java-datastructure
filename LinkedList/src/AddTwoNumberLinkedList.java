@@ -26,6 +26,7 @@ public class AddTwoNumberLinkedList {
         return dummy.next;
     }
 
+    // 定義一個鏈表
     public static class ListNode {
         int val;
         ListNode next;
@@ -34,6 +35,7 @@ public class AddTwoNumberLinkedList {
         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
+    // 進行測試
     public static void main(String[] args) {
         ListNode list1_node3 = new ListNode(3, null);
         ListNode list1_node2 = new ListNode(4, list1_node3);
@@ -49,6 +51,7 @@ public class AddTwoNumberLinkedList {
 
     }
 
+    // 打印鏈表
     public static void printList(ListNode head) {
         while (head != null) {
             System.out.print(head.val + " -> ");
