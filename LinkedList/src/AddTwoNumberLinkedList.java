@@ -1,11 +1,11 @@
 public class AddTwoNumberLinkedList {
 
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode dummy  = new ListNode(0);
+        ListNode dummy = new ListNode(0);
         ListNode current = dummy;
         int carryNum = 0;
 
-        while(l1 != null || l2 != null){
+        while (l1 != null || l2 != null) {
             int val1 = (l1 != null) ? l1.val : 0;
             int val2 = (l2 != null) ? l2.val : 0;
 
@@ -16,10 +16,10 @@ public class AddTwoNumberLinkedList {
             current.next = new ListNode(sum);
             current = current.next;
 
-            if(l1 != null) l1 = l1.next;
-            if(l2 != null) l2 = l2.next;
+            if (l1 != null) l1 = l1.next;
+            if (l2 != null) l2 = l2.next;
         }
-        if(carryNum > 0){
+        if (carryNum > 0) {
             current.next = new ListNode(carryNum);
         }
         
