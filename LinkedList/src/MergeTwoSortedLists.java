@@ -1,15 +1,15 @@
 public class MergeTwoSortedLists {
     /***
-     * 將兩個已排序過的鍊表合併成一個排序過的鍊表
+     * 將兩個已排序過的鏈表合併成一個排序過的鏈表
      * 思路：
      * 1. 先創建一個虛擬頭節點dummy，值可以任意取，也創建一個當前節點current，將dummy賦予給current
-     * 2. 遍歷兩個鍊表list1、list2
-     *    1) 兩個鍊表都不為null時，進行當前list1、list2節點值比較：
+     * 2. 遍歷兩個鏈表list1、list2
+     *    1) 兩個鏈表都不為null時，進行當前list1、list2節點值比較：
      *       1) 若list1的值小於list2的值，就將當前list1賦予到current.next，並讓 list1 往下一個節點走 list1 = list1.next
      *       2) 若list1的值大於list2的值，就將當前list2賦予到current.next，並讓 list2 往下一個節點走 list2 = list2.next
      *       3) 迴圈進行比較直到list1為null或list2為null
-     *    2) 若兩個鍊表其一為null，則將另一鍊表直接賦予給current
-     * 3. 最後，將 dummy 的下一個節點返回，即所求的兩個有序鍊表合併為一有序鍊表
+     *    2) 若兩個鏈表其一為null，則將另一鏈表直接賦予給current
+     * 3. 最後，將 dummy 的下一個節點返回，即所求的兩個有序鏈表合併為一有序鏈表
      *
      * **/
 
