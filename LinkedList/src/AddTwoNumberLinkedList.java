@@ -1,5 +1,10 @@
 public class AddTwoNumberLinkedList {
 
+    /**
+    * 將兩個鏈表依序進行相加合併成一個新的鏈表
+    *
+    */
+
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
         ListNode current = dummy;
